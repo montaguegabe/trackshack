@@ -1,7 +1,7 @@
 from .common import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com', '.trackshack.org']
 
 # AWS shared settings
 # Use this to control the cache time of the files once things have settled
