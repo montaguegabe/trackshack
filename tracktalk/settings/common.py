@@ -148,3 +148,6 @@ PYBB_ATTACHMENT_ENABLE = True
 
 ACCOUNT_ACTIVATION_DAYS = 7
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# PYBB
+PYBB_DEFAULT_TITLE = 'New Forum'
