@@ -9,3 +9,4 @@ static_collected
 # Dependencies
 env
 venv
+node_modules

@@ -38,13 +38,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">PYBB Modified. Django forum solution.</a>
+            <a class="navbar-brand" href="/">TrackShack</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-pybbm">
             <ul class="nav navbar-nav">
                 {% if request.user.is_authenticated %}
                     <li>
-                        <a href="{% url 'pybb:edit_profile' %}">Profile [logged as {{ request.user.username }}]</a>
+                        <a href="{% url 'pybb:edit_profile' %}">Profile [{{ request.user.username }}]</a>
                     </li>
                     <li>
                         <a href="{% url 'auth_logout' %}">Logout</a>
@@ -62,9 +62,6 @@
                         <a href="{% url 'registration_register' %}">Register</a>
                     </li>
                 {% endif %}
-                <li><a href="http://github.com/hovel/pybbm">Code</a></li>
-                <li><a href="http://pypi.python.org/pypi/pybbm">Download</a></li>
-                <li><a href="http://readthedocs.org/docs/pybbm/en/latest/">Documentation</a></li>
             </ul>
         </div>
     </div>
@@ -88,7 +85,7 @@
         {% endif %}
         {% if request.path == '/' %}
             <div class='forum-headline alert alert-block'>
-                This is a default installation of PyBBModified with default theme from example.
+                <b>Welcome</b> to this very very new site, where we have no users and no rules.
             </div>
         {% endif %}
         <div id="content">
@@ -99,54 +96,27 @@
     {% if request.path == '/' %}
         <div class="row">
             <div class="col-md-4">
-                <h2>Fully Documented</h2>
+                <h2>News</h2>
 
-                <p>Everything explained</p>
-
-                <p><a class="btn btn-default" href="http://readthedocs.org/docs/pybbm/en/latest/">Read docs now &raquo;</a></p>
+                <p>This website is freshly started. Any suggestions are welcome. Please post them in the Meta forum.</p>
             </div>
             <div class="col-md-4">
-                <h2>Heavily tested</h2>
+                <h2>Invite your friends</h2>
 
-                <p> 95% code coverage!</p>
-
-                <p><a class="btn btn-default" href="https://github.com/hovel/pybbm/blob/master/pybb/tests.py">View tests &raquo;</a>
-                </p>
+                <p>Especially if they like track.</p>
             </div>
             <div class="col-md-4">
-                <h2>Want a fast start?</h2>
+                <h2>Extra space</h2>
 
-                <p>Start from ready to use example project</p>
-
-                <p><a class="btn btn-default" href="http://readthedocs.org/docs/pybbm/en/latest/example.html">Read more &raquo;</a>
-                </p>
+                <p>There is some extra space over here I don't know what to do with. Maybe there will be so many TrackShackers that I will be able to put up ads here!</p>
             </div>
         </div>
 
-        <div class="row spaced">
-            <div class="col-md-4">
-                <h2>Django application</h2>
-
-                <p>Easy to embed to any django project</p>
-
-                <p>
-                    <a class="btn btn-success" href="http://readthedocs.org/docs/pybbm/en/latest/install.html">Learn how to install &raquo;</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Help welcomed</h2>
-
-                <p>Extended PyBBM? Push your changes.</p>
-
-                <p><a class="btn btn-default" href="https://github.com/hovel/pybbm">Fork repo &raquo;</a></p>
-            </div>
-        </div>
+        <div class="col-xs-12" style="height:50px;"></div>
     {% endif %}
 
     <footer>
-        powered by:
-        <a href="http://www.djangoproject.com">django</a>,&nbsp;
-        <a href="http://www.pybbm.org">pybbm</a>
+        &copy; 2017 TrackShack Solutions Ltd. &nbsp;
     </footer>
 
 </div>
