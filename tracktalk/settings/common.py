@@ -46,7 +46,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 if RAYGUN_APIKEY != '':
-    MIDDLEWARE_CLASSES += 'raygun4py.middleware.django.Provider'
+    MIDDLEWARE_CLASSES += ('raygun4py.middleware.django.Provider',)
 
 ROOT_URLCONF = 'tracktalk.urls'
 
