@@ -29,7 +29,7 @@ STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 
 # Media files
-MEDIA_ROOT = os.path.join(PUBLIC_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
