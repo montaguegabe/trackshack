@@ -13,7 +13,7 @@ ALLOWED_HOSTS = ['.herokuapp.com']
 
 # Static files
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static_collected')
-STATIC_ROOT = join(PUBLIC_DIR, 'static')
+STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
 STATICFILES_LOCATION = 'static'
 
 AWS_STORAGE_BUCKET_NAME = env('AWS_BUCKET_NAME') #'parkandpedal-content'
@@ -29,7 +29,7 @@ STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 
 # Media files
-MEDIA_ROOT = join(PUBLIC_DIR, 'media')
+MEDIA_ROOT = os.path.join(PUBLIC_DIR, 'media')
 MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
