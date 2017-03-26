@@ -12,8 +12,6 @@ ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Static files
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static_collected'), )
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_LOCATION = 'static'
 
 AWS_STORAGE_BUCKET_NAME = env('AWS_BUCKET_NAME') #'parkandpedal-content'
@@ -21,8 +19,7 @@ AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = env('AWS_ACCESS_KEY_SECRET')
 
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
-STATIC_URL = AWS_STATIC_URL
+STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
 # Feed static files to AWS Boto backend
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
