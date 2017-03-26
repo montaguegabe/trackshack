@@ -13,7 +13,5 @@
     "scripts": {
         "postdeploy": "python manage.py migrate"
     },
-    "addons": ["heroku-postgresql:hobby-dev"]
-    ,
     "success_url": "/"
 }
