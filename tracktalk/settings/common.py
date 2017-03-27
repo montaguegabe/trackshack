@@ -150,3 +150,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # PYBB
 PYBB_DEFAULT_TITLE = 'New Forum'
+PYBB_DEFAULT_TIME_ZONE = -5
