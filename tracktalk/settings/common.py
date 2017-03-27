@@ -149,5 +149,5 @@ ACCOUNT_ACTIVATION_DAYS = 7
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # PYBB
-PYBB_DEFAULT_TITLE = 'New Forum'
+PYBB_DEFAULT_TITLE = 'Home'
 PYBB_DEFAULT_TIME_ZONE = -5
